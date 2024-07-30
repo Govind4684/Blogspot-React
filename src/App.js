@@ -6,16 +6,24 @@ import EditPost from './pages/EditPost';
 import About from './pages/About';
 import Missing from './pages/Missing';
 import { Routes, Route } from 'react-router-dom';
-
-
+import { useEffect } from 'react';
+import useAxiosFetch from './hooks/useAxiosFetch';
+import { useStoreActions } from 'easy-peasy';
 
 function App() {
+
+  const setPosts = useStoreActions((actions) => actions.setPosts);
+  const { data, isLoading, fetchError } = useAxiosFetch('http://localhost:3500/posts');
+
+  useEffect(() => {
+      setPosts(data);
+  }, [data, setPosts]);
 
 
   return (
       <Routes>      
         <Route path='/' element={<Layout/>}>
-          <Route index element={<Home />} />  
+          <Route index element={<Home isLoading={isLoading} fetchError={fetchError} />} />  
           <Route path='post'>
             <Route index element={<NewPost />} />            
             <Route path=':id' element={<PostPage />} /> 
