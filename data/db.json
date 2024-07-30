@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Testing 100",
+      "datetime": "July 30, 2024 3:01:19 AM",
+      "body": "A quick brown fox jumps over the lazy dog"
+    },
+    {
+      "id": 4,
+      "title": "Axios Post",
+      "datetime": "July 30, 2024 2:42:42 AM",
+      "body": "[Updated] Posted to json server using axios"
+    },
+    {
+      "id": 5,
+      "title": "New Age of Indian Cricket",
+      "datetime": "July 30, 2024 5:49:21 PM",
+      "body": "T20 bilateral series is going on with new Indian team with Gautam Gambhir as Head Coach. SKY is the newly selected Captain with Pandaya as Vice-Captain."
+    },
+    {
+      "id": 6,
+      "title": "New Post",
+      "datetime": "July 30, 2024 3:09:40 AM",
+      "body": "Just increasing the data size!"
+    },
+    {
+      "id": 7,
+      "title": "Lighthouse House Performance",
+      "datetime": "July 30, 2024 5:49:12 PM",
+      "body": "Scored 100 in all parameters!!!"
+    }
+  ]
+}
