@@ -27,7 +27,7 @@ const EditPost = () => {
 
     }, [ post, setEditTitle, setEditBody ])
 
-    const handleEdit = async (id) => {
+    const handleEdit = (id) => {
         const datetime = format(new Date(), 'MMMM dd, yyyy pp');
         const updatedPost = {id, title: editTitle, datetime, body: editBody};
         editPost(updatedPost);
